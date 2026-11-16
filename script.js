@@ -98,6 +98,11 @@
     if (heroTop) so.observe(heroTop);
   }
 
+  /* ---------- Film poster ----------
+     Phones play the vertical cut (see the <source media> in the markup), so they get the vertical poster too. */
+  var film = document.querySelector('.film video[data-poster-tall]');
+  if (film && window.matchMedia('(max-width: 600px)').matches) film.poster = film.getAttribute('data-poster-tall');
+
   /* ---------- Floating WhatsApp button ----------
      Hidden while the hero is on screen (it has its own WhatsApp button) and
      while the contact card is on screen (so it never covers the contact links). */
