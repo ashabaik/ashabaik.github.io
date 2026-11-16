@@ -497,6 +497,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .badge .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--ok); box-shadow: 0 0 0 3px var(--ok-soft); }
 .badge-client { background: var(--surface); }
 .badge-concept { background: transparent; border-style: dashed; color: var(--muted); }
+.badge-own { background: var(--accent-soft); border-color: transparent; color: var(--accent); }
 .badge-live { background: var(--ok-soft); border-color: transparent; color: var(--ok); }
 
 .case {
@@ -566,6 +567,55 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .fact-list .num { padding-top: 5px; }
 :lang(ar) .fact-list .num { padding-top: 8px; }
 @media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; gap: 28px; } }
+
+/* ---------- Case-study pages (site/margin/ and site/ar/margin/) ---------- */
+.back-link { margin-inline-start: auto; padding: 8px 12px; border-radius: 8px; color: var(--muted); font-weight: 500; font-size: 15px; text-decoration: none; white-space: nowrap; transition: color 0.2s, background-color 0.2s; }
+.back-link:hover { color: var(--ink); background: color-mix(in srgb, var(--ink) 6%, transparent); }
+.cs-hero { padding: 64px 0 28px; }
+.cs-hero .wrap { position: relative; z-index: 1; }
+.cs-title { font-size: clamp(36px, 5vw, 64px); line-height: 1.04; letter-spacing: -0.03em; text-wrap: balance; max-width: 18ch; }
+:lang(ar) .cs-title { font-size: clamp(31px, 4.2vw, 54px); line-height: 1.4; max-width: 15em; }
+.cs-lead { max-width: 60ch; }
+:lang(ar) .cs-lead { max-width: 34em; }
+.cs-facts { margin: 40px 0 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0 28px; border-top: 2px solid var(--line-strong); }
+.cs-facts div { padding: 16px 0 0; position: relative; }
+.cs-facts div::before { content: ""; position: absolute; inset-inline-start: 0; top: -2px; width: 44px; height: 2px; background: var(--accent); }
+.cs-facts dt { font-family: var(--font-mono); font-size: 11.5px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+:lang(ar) .cs-facts dt { letter-spacing: 0; text-transform: none; font-size: 14px; font-weight: 600; }
+.cs-facts dd { margin: 0; color: var(--ink-2); font-size: 15.5px; }
+.cs-facts dd .ltr { display: block; font-size: 14.5px; }
+[dir="rtl"] .cs-facts dd .ltr { text-align: right; }
+.cs-section { padding-top: 28px; }
+.cs-figure { margin: 0 0 56px; }
+.cs-figure img { width: 100%; border-radius: var(--radius); border: 1px solid var(--line-strong); box-shadow: var(--shadow); background: var(--surface-2); }
+.cs-figure figcaption { margin-top: 12px; color: var(--muted); font-size: 14.5px; }
+.cs-block { display: grid; grid-template-columns: minmax(0, 0.42fr) minmax(0, 1fr); gap: 16px 48px; margin-bottom: 56px; align-items: start; }
+.cs-block h2 { font-size: clamp(26px, 2.8vw, 36px); letter-spacing: -0.02em; padding-top: 14px; border-top: 2px solid var(--accent); display: inline-block; justify-self: start; }
+:lang(ar) .cs-block h2 { font-size: clamp(24px, 2.5vw, 31px); }
+.cs-body > p { color: var(--ink-2); font-size: 18px; line-height: 1.65; text-wrap: pretty; max-width: 64ch; }
+:lang(ar) .cs-body > p { line-height: 1.95; max-width: 36em; }
+.cs-body > p + p { margin-top: 16px; }
+.cs-list li { position: relative; padding-block: 11px; padding-inline: 22px 0; color: var(--ink-2); border-top: 1px dashed var(--line); max-width: 68ch; }
+.cs-list li:first-child { border-top: 0; padding-top: 2px; }
+.cs-list li::before { content: ""; position: absolute; inset-inline-start: 0; top: 1.45em; width: 10px; height: 2px; background: var(--accent); }
+.cs-list li:first-child::before { top: 0.9em; }
+:lang(ar) .cs-list li::before { top: 1.7em; }
+:lang(ar) .cs-list li:first-child::before { top: 1.1em; }
+.cs-list code, .cs-body code { font-family: var(--font-num); font-size: 0.86em; padding: 2px 6px; border-radius: 6px; background: var(--accent-soft); color: var(--accent); }
+.cs-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; align-items: start; }
+.cs-gallery .cs-figure { margin: 0; }
+.cs-gallery .cs-phone { max-width: 250px; }
+@media (max-width: 860px) {
+  .cs-hero { padding: 40px 0 20px; }
+  .cs-facts { grid-template-columns: 1fr 1fr; row-gap: 22px; }
+  .cs-block { grid-template-columns: 1fr; margin-bottom: 44px; }
+  .cs-figure { margin-bottom: 44px; }
+}
+@media (max-width: 520px) {
+  .cs-facts { grid-template-columns: 1fr; }
+  .cs-gallery { grid-template-columns: 1fr; }
+  .back-link { padding-inline: 6px; font-size: 14.5px; }
+}
 
 /* ---------- Film ---------- */
 .film { margin: 0; }

@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Margin: a team board your AI assistant can work on | Ahmed Shabayek</title>
+<meta name="description" content="Case study: Margin, a team task board that Claude and ChatGPT can operate over MCP, with every assistant change tracked and shown live.">
+<link rel="canonical" href="https://ashabaik.github.io/margin/">
+<link rel="alternate" hreflang="en" href="https://ashabaik.github.io/margin/">
+<link rel="alternate" hreflang="ar" href="https://ashabaik.github.io/ar/margin/">
+<link rel="alternate" hreflang="x-default" href="https://ashabaik.github.io/margin/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ahmed Shabayek">
+<meta property="og:url" content="https://ashabaik.github.io/margin/">
+<meta property="og:title" content="Margin: a team board your AI assistant can work on">
+<meta property="og:description" content="A team task board that Claude and ChatGPT can operate over MCP, with every assistant change tracked and shown live.">
+<meta property="og:image" content="https://ashabaik.github.io/images/margin/01-margin.jpg">
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1080">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_AR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Margin: a team board your AI assistant can work on">
+<meta name="twitter:description" content="A team task board that Claude and ChatGPT can operate over MCP, with every assistant change tracked and shown live.">
+<meta name="twitter:image" content="https://ashabaik.github.io/images/margin/01-margin.jpg">
+<meta name="theme-color" content="#f6f3ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@600&text=%D8%B9%D8%B1%D8%A8%D9%8A&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<script>
+(function(){document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="../" aria-label="Ahmed Shabayek, home page">
+      <span class="brand-mark" aria-hidden="true">AS</span>
+      <span class="brand-name">Ahmed Shabayek</span>
+    </a>
+    <a class="back-link" href="../#work"><span aria-hidden="true">←</span> All work</a>
+    <a class="lang-switch" href="../ar/margin/" lang="ar" hreflang="ar" aria-label="العربية: النسخة العربية من الصفحة">عربي</a>
+    <button class="theme-btn" type="button" aria-label="Switch to dark mode" title="Switch theme" data-label-dark="Switch to dark mode" data-label-light="Switch to light mode">
+      <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero cs-hero">
+    <div class="wrap">
+      <p class="eyebrow reveal">Case study · 2026</p>
+      <h1 class="cs-title reveal">Margin: a team board <em>your AI assistant can work on.</em></h1>
+      <p class="hero-lead cs-lead reveal">Margin is a team task board that people use on the web or through Claude and ChatGPT (MCP). Every change is recorded with who, when, what changed and whether a person or their assistant did it.</p>
+      <div class="btn-row reveal">
+        <a class="btn btn-primary" href="https://shabaik-boards-shabaiks--org-8080.ignite.dodil.cloud" target="_blank" rel="noopener">Open live app<svg class="ext" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg><span class="sr-only">(opens in a new tab)</span></a>
+        <a class="btn btn-ghost" href="https://git.dodil.io/shabaiks-org/shabaik-boards" target="_blank" rel="noopener">View the code<svg class="ext" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg><span class="sr-only">(opens in a new tab)</span></a>
+      </div>
+      <dl class="cs-facts reveal">
+        <div><dt>Type</dt><dd>Full-stack web app + AI assistant integration (MCP)</dd></div>
+        <div><dt>Role</dt><dd>Solo: product, design, back end, front end, tests, deployment</dd></div>
+        <div><dt>Year</dt><dd>2026</dd></div>
+        <div><dt>Stack</dt><dd>Python 3.12, FastAPI, Postgres-compatible DB with vector search, OAuth, MCP, JavaScript, CI/CD</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section cs-section">
+    <div class="wrap">
+      <figure class="cs-figure reveal">
+        <img src="../images/margin/01-margin.jpg" alt="The Margin board while Claude moves a card, with the change noted in the margin" width="1920" height="1080" decoding="async">
+        <figcaption>The live board while Claude moves a card.</figcaption>
+      </figure>
+
+      <div class="cs-block reveal">
+        <h2>The problem</h2>
+        <div class="cs-body">
+          <p>Teams now let AI assistants change their work tools, but most task boards can't tell you which changes a person made and which their assistant made, and they give the assistant either too much access or none.</p>
+        </div>
+      </div>
+
+      <div class="cs-block reveal">
+        <h2>The solution</h2>
+        <div class="cs-body">
+          <p>Margin is a team task board you can run from the web page or straight from Claude or ChatGPT. Ask "what's on my plate this week?", "move card 12 to Done" or "what is blocking the launch?" and the assistant does it, acting as you and seeing only your boards.</p>
+          <p>Every change records who, when, what changed (old and new value) and through which door: the web page or an assistant, with the assistant's name. Anything an assistant does glides into place live on the board, glows, and carries a "via Claude" mark.</p>
+        </div>
+      </div>
+
+      <figure class="cs-figure reveal">
+        <img src="../images/margin/02-assistant.jpg" alt="Margin with cards marked via Claude and example requests to the assistant" width="1920" height="1080" loading="lazy" decoding="async">
+        <figcaption>Claude and ChatGPT integration, "via Claude" marks, example requests.</figcaption>
+      </figure>
+
+      <div class="cs-block reveal">
+        <h2>Features</h2>
+        <div class="cs-body">
+          <ul class="cs-list">
+            <li>Team roles: owner, member, viewer. Only the owner manages people; viewers read only. Boards you are not on are invisible, on the web and to the assistant.</li>
+            <li>Boards with To do / Doing / Done; cards with title, description, assignee, due date, labels, checklist and short card numbers. Drag and drop with mouse, pen or touch; order is saved.</li>
+            <li>Full card history and board activity log.</li>
+            <li>One MCP endpoint with 27 action tools (move, assign, update, block, search, summarize...), so Claude and ChatGPT work on the board through real actions, never raw database access.</li>
+            <li>AI features: turn a card into a checklist, a daily brief per board, search by meaning ("how do we get paid?" finds "Send invoice"), "find similar cards" with vector embeddings.</li>
+            <li>"Blocked by" chains with loop checks: "what is blocking the launch?" answers down the whole chain.</li>
+            <li>Overdue flags everywhere; "my cards" split into overdue, this week, later.</li>
+            <li>Light and dark themes, phone layout, keyboard shortcuts, reduced-motion support, live updates.</li>
+          </ul>
+        </div>
+      </div>
+
+      <figure class="cs-figure reveal">
+        <img src="../images/margin/03-extras.jpg" alt="Four Margin screens: what is blocking the launch, turning a card into a checklist, the daily brief, and search by meaning" width="1920" height="1080" loading="lazy" decoding="async">
+        <figcaption>What is blocking, AI checklist, daily brief, search by meaning.</figcaption>
+      </figure>
+
+      <div class="cs-block reveal">
+        <h2>How it's built</h2>
+        <div class="cs-body">
+          <ul class="cs-list">
+            <li>Python 3.12 + FastAPI with Domain-Driven Design (domain / application / infrastructure). The web routes and the MCP tools call the same use cases, so every rule is written once and holds for both.</li>
+            <li>51 automated tests covering the role and board rules.</li>
+            <li>OAuth sign-in with PKCE and dynamic client registration, so Claude.ai and ChatGPT connect as the signed-in person.</li>
+            <li>Postgres-compatible database with <code>VECTOR(2048)</code> columns and cosine nearest-neighbour search; embeddings and chat from hosted AI models.</li>
+            <li>CI pipeline that tests, builds and deploys on every push; one-command "remix" lets anyone copy the whole app (code, database, sign-in, deployment) into their own account.</li>
+            <li>Front end in plain JavaScript and CSS (no build step), with its own editorial design: drag with lift and tilt, animated card moves and toasts.</li>
+            <li>README and design notes in the repository.</li>
+          </ul>
+        </div>
+      </div>
+
+      <figure class="cs-figure reveal">
+        <img src="../images/margin/04-everywhere.jpg" alt="Margin in dark mode and on a phone, with notes on how it is built" width="1920" height="1080" loading="lazy" decoding="async">
+        <figcaption>Dark mode, phone view, how it's built.</figcaption>
+      </figure>
+
+      <div class="cs-block reveal">
+        <h2>More screens</h2>
+        <div class="cs-body cs-gallery">
+          <figure class="cs-figure">
+            <img src="../images/margin/05-live-agent.jpg" alt="An assistant change arriving live on the Margin board, marked via Claude" width="1920" height="1200" loading="lazy" decoding="async">
+            <figcaption>An assistant change arriving live ("via Claude").</figcaption>
+          </figure>
+          <figure class="cs-figure">
+            <img src="../images/margin/06-live-dark.jpg" alt="The Margin board in the dark theme" width="1920" height="1200" loading="lazy" decoding="async">
+            <figcaption>Dark theme.</figcaption>
+          </figure>
+          <figure class="cs-figure cs-phone">
+            <img src="../images/margin/07-live-phone.jpg" alt="The Margin board on a phone" width="780" height="1688" loading="lazy" decoding="async">
+            <figcaption>Phone layout.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap">
+      <div class="contact reveal">
+        <p class="eyebrow">Let's talk</p>
+        <h2>Need a system like this <em>for your business?</em></h2>
+        <p class="contact-lead">Send me a few lines about what you want to build. Write in English or Arabic.</p>
+        <div class="contact-cta">
+          <a class="btn btn-wa btn-lg" href="https://wa.me/201009565137" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 1.8a8.2 8.2 0 1 1-4.2 15.3l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 0 1 12 3.8zm-3.3 4.4c-.2 0-.5 0-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.2 5 4.4 2.5 1 3 .8 3.5.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.1-1.4l-.5-.3-1.9-.9c-.2-.1-.4-.1-.6.1l-.9 1.1c-.2.2-.3.2-.6.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.4-.5-.6-.5h-.5z"/></svg>Message me on WhatsApp<span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+        <ul class="contact-links">
+          <li><a href="../#work"><span aria-hidden="true">←</span> Back to all work</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>© 2026 Ahmed Mohamed Shabayek · Cairo, Egypt</p>
+    <p>No cookies, no ad trackers. Visits are counted with cookieless analytics.</p>
+  </div>
+</footer>
+
+<script src="../script.js" defer></script>
+<!-- Cloudflare Web Analytics: page views only, no cookies. Skipped on localhost. -->
+<script>
+(function(){var hn=location.hostname;if(hn==='localhost'||hn==='127.0.0.1'||hn==='[::1]'||hn==='')return;
+var s=document.createElement('script');s.defer=true;s.src='https://static.cloudflareinsights.com/beacon.min.js';
+s.setAttribute('data-cf-beacon','{"token": "280e1668e1364710853b50ac3b85fb3b"}');document.body.appendChild(s);})();
+</script>
+</body>
+</html>
