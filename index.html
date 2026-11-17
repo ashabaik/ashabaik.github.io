@@ -31,9 +31,11 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts-latin.css">
 <!-- Only the four letters of the language switch, in the Arabic page's typeface. -->
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@600&text=%D8%B9%D8%B1%D8%A8%D9%8A&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@600&text=%D8%B9%D8%B1%D8%A8%D9%8A&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@600&text=%D8%B9%D8%B1%D8%A8%D9%8A&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="styles.css">
 <script>
 /* Apply a saved theme before first paint to avoid a flash. */
@@ -48,9 +50,10 @@
 
 <header class="site-header">
   <div class="wrap header-row">
-    <a class="brand" href="#top" aria-label="Ahmed Shabayek, back to top">
+    <a class="brand" href="#top">
       <span class="brand-mark" aria-hidden="true">AS</span>
-      <span class="brand-name">Ahmed Shabayek</span>
+      <span class="brand-name" aria-hidden="true">Ahmed Shabayek</span>
+      <span class="sr-only">Ahmed Shabayek, back to top</span>
     </a>
     <nav class="site-nav" aria-label="Main">
       <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-list">
