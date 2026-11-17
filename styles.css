@@ -568,7 +568,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 :lang(ar) .fact-list .num { padding-top: 8px; }
 @media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; gap: 28px; } }
 
-/* ---------- Case-study pages (site/margin/ and site/ar/margin/) ---------- */
+/* ---------- Case-study pages (site/margin/, site/dasta/ and their /ar/ twins) ---------- */
 .back-link { margin-inline-start: auto; padding: 8px 12px; border-radius: 8px; color: var(--muted); font-weight: 500; font-size: 15px; text-decoration: none; white-space: nowrap; transition: color 0.2s, background-color 0.2s; }
 .back-link:hover { color: var(--ink); background: color-mix(in srgb, var(--ink) 6%, transparent); }
 .cs-hero { padding: 64px 0 28px; }
@@ -616,6 +616,18 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .cs-gallery { grid-template-columns: 1fr; }
   .back-link { padding-inline: 6px; font-size: 14.5px; }
 }
+
+/* Dasta case study: a screen recording, inline links, a pair of phone screens, a note above the card buttons. */
+.cs-film-frame { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line-strong); box-shadow: var(--shadow); background: var(--surface-2); aspect-ratio: 1440 / 900; }
+.cs-film-frame video { width: 100%; height: 100%; object-fit: cover; }
+/* On phones the phone recording is shown instead (see the <source media> in the markup). */
+@media (max-width: 600px) { .cs-film-frame { aspect-ratio: 390 / 844; max-width: 300px; margin-inline: auto; } }
+.cs-body > ul + p { margin-top: 20px; }
+.cs-body a { color: var(--ink); text-underline-offset: 4px; text-decoration-color: var(--accent); }
+.cs-body a:hover { color: var(--accent); }
+.cs-gallery + .cs-gallery { margin-top: 22px; }
+.cs-gallery.cs-phones { grid-template-columns: repeat(2, minmax(0, 250px)); }
+.case-note + .btn-row { margin-top: 20px; }
 
 /* ---------- Film ---------- */
 .film { margin: 0; }

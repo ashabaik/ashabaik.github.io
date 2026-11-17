@@ -100,8 +100,11 @@
 
   /* ---------- Film poster ----------
      Phones play the vertical cut (see the <source media> in the markup), so they get the vertical poster too. */
-  var film = document.querySelector('.film video[data-poster-tall]');
-  if (film && window.matchMedia('(max-width: 600px)').matches) film.poster = film.getAttribute('data-poster-tall');
+  if (window.matchMedia('(max-width: 600px)').matches) {
+    Array.prototype.forEach.call(document.querySelectorAll('video[data-poster-tall]'), function (film) {
+      film.poster = film.getAttribute('data-poster-tall');
+    });
+  }
 
   /* ---------- Floating WhatsApp button ----------
      Hidden while the hero is on screen (it has its own WhatsApp button) and
